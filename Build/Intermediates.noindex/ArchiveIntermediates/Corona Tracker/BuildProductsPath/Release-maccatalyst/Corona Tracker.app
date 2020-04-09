@@ -1,0 +1,1 @@
+/Users/gunasegarran/Downloads/CoronaTracker/Build/Intermediates.noindex/ArchiveIntermediates/Corona Tracker/InstallationBuildProductsLocation/Applications/Corona Tracker.app

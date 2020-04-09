@@ -1,0 +1,4 @@
+module Charts {
+header "Charts-Swift.h"
+export *
+}
