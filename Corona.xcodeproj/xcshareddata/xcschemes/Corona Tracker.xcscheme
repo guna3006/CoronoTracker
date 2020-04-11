@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1162D127240D05F600647002"
-               BuildableName = "Corona Tracker.app"
+               BuildableName = "COVID-19.app"
                BlueprintName = "Corona Tracker"
                ReferencedContainer = "container:Corona.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1162D127240D05F600647002"
-            BuildableName = "Corona Tracker.app"
+            BuildableName = "COVID-19.app"
             BlueprintName = "Corona Tracker"
             ReferencedContainer = "container:Corona.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1162D127240D05F600647002"
-            BuildableName = "Corona Tracker.app"
+            BuildableName = "COVID-19.app"
             BlueprintName = "Corona Tracker"
             ReferencedContainer = "container:Corona.xcodeproj">
          </BuildableReference>

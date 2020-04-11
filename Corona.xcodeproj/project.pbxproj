@@ -13,6 +13,7 @@
 		1124F64624224E240002641D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1124F64524224E240002641D /* MenuController.swift */; };
 		1124F64A242386A30002641D /* MenuSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1124F649242386A30002641D /* MenuSegue.swift */; };
 		1124F64C24238C600002641D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1124F64B24238C600002641D /* Menu.swift */; };
+		112A0872244081AE00A59F1D /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A0871244081AE00A59F1D /* ContextMenu.swift */; };
 		113AF0592437A4B2000732D0 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AF0582437A4B2000732D0 /* ChartController.swift */; };
 		113AF05F243B52B3000732D0 /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113AF05E243B52B3000732D0 /* ShareManager.swift */; };
 		1151868B241FA9AA00EBC83E /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151868A241FA9AA00EBC83E /* UIExtensions.swift */; };
@@ -72,14 +73,28 @@
 		119043B9242F6F2B0080E405 /* TrendlineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119043B8242F6F2B0080E405 /* TrendlineChartView.swift */; };
 		1195F1A5241EC1FB00FE718F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 1195F1A4241EC1FB00FE718F /* Charts */; };
 		11BF32AA24156AE500270130 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 11BF32A924156AE500270130 /* FloatingPanel */; };
+		11C6D37C243E4487003AC870 /* RegionChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D37B243E4487003AC870 /* RegionChartView.swift */; };
+		11C6D37E243E44D4003AC870 /* Charts+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D37D243E44D4003AC870 /* Charts+Extensions.swift */; };
+		11C6D380243E44FC003AC870 /* BaseChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D37F243E44FC003AC870 /* BaseChartView.swift */; };
+		11C6D382243E460D003AC870 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D381243E460D003AC870 /* MenuItem.swift */; };
+		11C6D384243E464A003AC870 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D383243E464A003AC870 /* MenuItemCell.swift */; };
+		11C6D386243E46B1003AC870 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D385243E46B1003AC870 /* DetailsView.swift */; };
+		11C6D38B243E47BE003AC870 /* StatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D38A243E47BE003AC870 /* StatsCell.swift */; };
+		11C6D38D243E47EF003AC870 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D38C243E47EF003AC870 /* ChartCell.swift */; };
+		11C6D390243E4882003AC870 /* UpdateTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D38F243E4882003AC870 /* UpdateTimeCell.swift */; };
+		11C6D392243E489F003AC870 /* DataSourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D391243E489F003AC870 /* DataSourceCell.swift */; };
+		11C6D394243E48C3003AC870 /* AuthorInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D393243E48C3003AC870 /* AuthorInfoCell.swift */; };
+		11C6D398243E4A23003AC870 /* PanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6D397243E4A23003AC870 /* PanelLayout.swift */; };
+		11DCD56D243F8EEC006CE8ED /* AppToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCD56C243F8EEC006CE8ED /* AppToolbar.swift */; };
+		11DCD56F243FAEBB006CE8ED /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DCD56E243FAEBB006CE8ED /* AppMenu.swift */; };
 		11DE76882431339400381C0A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DE76872431339400381C0A /* ChartView.swift */; };
 		11EB2C9D2413F7E9001769B2 /* CurrentChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB2C9C2413F7E9001769B2 /* CurrentChartView.swift */; };
 		11EB2C9F2413FFE1001769B2 /* HistoryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB2C9E2413FFE1001769B2 /* HistoryChartView.swift */; };
 		11EB2CA1241400EF001769B2 /* TopChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB2CA0241400EF001769B2 /* TopChartView.swift */; };
 		3447B4BB241E7631003914AF /* RegionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195F19D241D2E7900FE718F /* RegionListController.swift */; };
 		3447B4BD241E7790003914AF /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447B4BC241E7790003914AF /* App.swift */; };
-		344ED322241AC7AA004C4EA8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ED321241AC7AA004C4EA8 /* NotificationCenter.framework */; };
-		344ED32C241AC7AA004C4EA8 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 344ED31F241AC7AA004C4EA8 /* Widget.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		344ED322241AC7AA004C4EA8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ED321241AC7AA004C4EA8 /* NotificationCenter.framework */; platformFilter = ios; };
+		344ED32C241AC7AA004C4EA8 /* COVID-19.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 344ED31F241AC7AA004C4EA8 /* COVID-19.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		344ED333241ACCC9004C4EA8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344ED324241AC7AA004C4EA8 /* TodayViewController.swift */; };
 		CDA50DE0242C7D330055BE4A /* CSV in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B3241FB00000EBC83E /* CSV */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CDA50DE2242C7D350055BE4A /* Disk in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B0241FAFF300EBC83E /* Disk */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -90,18 +105,18 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		344ED32D241AC7AA004C4EA8 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				344ED32C241AC7AA004C4EA8 /* Widget.appex in Embed App Extensions */,
+				344ED32C241AC7AA004C4EA8 /* COVID-19.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		CDA50DE1242C7D330055BE4A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -109,11 +124,11 @@
 				CDA50DE2242C7D350055BE4A /* Disk in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		CDA50DE4242C7D3C0055BE4A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -121,7 +136,7 @@
 				CDA50DE5242C7D3D0055BE4A /* Disk in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -132,6 +147,7 @@
 		1124F64524224E240002641D /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		1124F649242386A30002641D /* MenuSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSegue.swift; sourceTree = "<group>"; };
 		1124F64B24238C600002641D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		112A0871244081AE00A59F1D /* ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
 		113AF0582437A4B2000732D0 /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 		113AF05E243B52B3000732D0 /* ShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
 		113AF060243CB1C1000732D0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -148,7 +164,7 @@
 		11518698241FAECB00EBC83E /* JHURepoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHURepoDataService.swift; sourceTree = "<group>"; };
 		1151869B241FAF6200EBC83E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		115186BE242019EE00EBC83E /* Change.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
-		1162D128240D05F600647002 /* Corona Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corona Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1162D128240D05F600647002 /* COVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1162D12B240D05F600647002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1162D12D240D05F600647002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1162D12F240D05F600647002 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -179,6 +195,20 @@
 		119043B8242F6F2B0080E405 /* TrendlineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendlineChartView.swift; sourceTree = "<group>"; };
 		1195F19D241D2E7900FE718F /* RegionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionListController.swift; sourceTree = "<group>"; };
 		11BF32B024166E5C00270130 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		11C6D37B243E4487003AC870 /* RegionChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionChartView.swift; sourceTree = "<group>"; };
+		11C6D37D243E44D4003AC870 /* Charts+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charts+Extensions.swift"; sourceTree = "<group>"; };
+		11C6D37F243E44FC003AC870 /* BaseChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChartView.swift; sourceTree = "<group>"; };
+		11C6D381243E460D003AC870 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		11C6D383243E464A003AC870 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		11C6D385243E46B1003AC870 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		11C6D38A243E47BE003AC870 /* StatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCell.swift; sourceTree = "<group>"; };
+		11C6D38C243E47EF003AC870 /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		11C6D38F243E4882003AC870 /* UpdateTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTimeCell.swift; sourceTree = "<group>"; };
+		11C6D391243E489F003AC870 /* DataSourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceCell.swift; sourceTree = "<group>"; };
+		11C6D393243E48C3003AC870 /* AuthorInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorInfoCell.swift; sourceTree = "<group>"; };
+		11C6D397243E4A23003AC870 /* PanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelLayout.swift; sourceTree = "<group>"; };
+		11DCD56C243F8EEC006CE8ED /* AppToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppToolbar.swift; sourceTree = "<group>"; };
+		11DCD56E243FAEBB006CE8ED /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		11DE76842430AB2900381C0A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		11DE76852430AB9100381C0A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		11DE76862430AE6600381C0A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -188,11 +218,13 @@
 		11EB2CA0241400EF001769B2 /* TopChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopChartView.swift; sourceTree = "<group>"; };
 		18CAD032242A5E1200CA1CEE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3447B4BC241E7790003914AF /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		344ED31F241AC7AA004C4EA8 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		344ED31F241AC7AA004C4EA8 /* COVID-19.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "COVID-19.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		344ED321241AC7AA004C4EA8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		344ED324241AC7AA004C4EA8 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		344ED329241AC7AA004C4EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34C02EBB2431246C00AE80FE /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ADADB2092442614600129787 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		FC5A29A624400862005C58BB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,8 +266,11 @@
 			isa = PBXGroup;
 			children = (
 				1124F64B24238C600002641D /* Menu.swift */,
+				11C6D381243E460D003AC870 /* MenuItem.swift */,
 				1124F649242386A30002641D /* MenuSegue.swift */,
 				1124F64524224E240002641D /* MenuController.swift */,
+				11C6D383243E464A003AC870 /* MenuItemCell.swift */,
+				112A0871244081AE00A59F1D /* ContextMenu.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -284,8 +319,8 @@
 		1162D129240D05F600647002 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1162D128240D05F600647002 /* Corona Tracker.app */,
-				344ED31F241AC7AA004C4EA8 /* Widget.appex */,
+				1162D128240D05F600647002 /* COVID-19.app */,
+				344ED31F241AC7AA004C4EA8 /* COVID-19.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,7 +331,6 @@
 				1151868D241FAECB00EBC83E /* Data */,
 				11518695241FAECB00EBC83E /* Service */,
 				1151868F241FAECB00EBC83E /* Model */,
-				1162D15F240FA85300647002 /* Map */,
 				1162D151240F934000647002 /* Chart */,
 				1124F64D242394BB0002641D /* Menu */,
 				1114CFC52423F8CC00B1CF85 /* Share */,
@@ -317,27 +351,16 @@
 		1162D151240F934000647002 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				11DE76872431339400381C0A /* ChartView.swift */,
+				11C6D378243E43F0003AC870 /* ChartView */,
+				11C6D37A243E4441003AC870 /* Components */,
+				11C6D379243E4408003AC870 /* Formatters */,
 				11EB2C9C2413F7E9001769B2 /* CurrentChartView.swift */,
 				1186BC5C24291D4000097E9E /* DeltaChartView.swift */,
 				11EB2C9E2413FFE1001769B2 /* HistoryChartView.swift */,
 				11EB2CA0241400EF001769B2 /* TopChartView.swift */,
 				119043B8242F6F2B0080E405 /* TrendlineChartView.swift */,
-				1162D153240F934000647002 /* BalloonMarker.swift */,
-				1162D152240F934000647002 /* SimpleMarkerView.swift */,
-				11672A1B24114922000B2466 /* PercentValueFormatter.swift */,
-				11672A1D2411494F000B2466 /* DayAxisValueFormatter.swift */,
 			);
 			path = Chart;
-			sourceTree = "<group>";
-		};
-		1162D15F240FA85300647002 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				1162D144240EB86400647002 /* RegionAnnotation.swift */,
-				1162D160240FA87E00647002 /* RegionAnnotationView.swift */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 		1162D16B240FC55F00647002 /* Util */ = {
@@ -356,6 +379,8 @@
 				3447B4BC241E7790003914AF /* App.swift */,
 				1162D12B240D05F600647002 /* AppDelegate.swift */,
 				1162D12D240D05F600647002 /* SceneDelegate.swift */,
+				11DCD56C243F8EEC006CE8ED /* AppToolbar.swift */,
+				11DCD56E243FAEBB006CE8ED /* AppMenu.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -386,15 +411,85 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		11EB2CA224140D24001769B2 /* Controller */ = {
+		11C6D378243E43F0003AC870 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				11DE76872431339400381C0A /* ChartView.swift */,
+				11C6D37F243E44FC003AC870 /* BaseChartView.swift */,
+				11C6D37B243E4487003AC870 /* RegionChartView.swift */,
+				11C6D37D243E44D4003AC870 /* Charts+Extensions.swift */,
+			);
+			path = ChartView;
+			sourceTree = "<group>";
+		};
+		11C6D379243E4408003AC870 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				11672A1B24114922000B2466 /* PercentValueFormatter.swift */,
+				11672A1D2411494F000B2466 /* DayAxisValueFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		11C6D37A243E4441003AC870 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1162D153240F934000647002 /* BalloonMarker.swift */,
+				1162D152240F934000647002 /* SimpleMarkerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		11C6D387243E4705003AC870 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				11C6D38E243E4849003AC870 /* RegionCells */,
+				116EC0A72410DF48006E4559 /* RegionPanelController.swift */,
+				1186BC6D242B608200097E9E /* RegionDataController.swift */,
+				1195F19D241D2E7900FE718F /* RegionListController.swift */,
+			);
+			path = Region;
+			sourceTree = "<group>";
+		};
+		11C6D38E243E4849003AC870 /* RegionCells */ = {
+			isa = PBXGroup;
+			children = (
+				1186BC71242B64FE00097E9E /* RegionDataCell.swift */,
+				11C6D38A243E47BE003AC870 /* StatsCell.swift */,
+				11C6D38C243E47EF003AC870 /* ChartCell.swift */,
+				11C6D38F243E4882003AC870 /* UpdateTimeCell.swift */,
+				11C6D391243E489F003AC870 /* DataSourceCell.swift */,
+				11C6D393243E48C3003AC870 /* AuthorInfoCell.swift */,
+			);
+			path = RegionCells;
+			sourceTree = "<group>";
+		};
+		11C6D395243E49DB003AC870 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				1162D12F240D05F600647002 /* MapController.swift */,
-				116EC0A72410DF48006E4559 /* RegionPanelController.swift */,
-				1186BC6D242B608200097E9E /* RegionDataController.swift */,
-				1186BC71242B64FE00097E9E /* RegionDataCell.swift */,
-				1195F19D241D2E7900FE718F /* RegionListController.swift */,
+				11C6D397243E4A23003AC870 /* PanelLayout.swift */,
+				1162D144240EB86400647002 /* RegionAnnotation.swift */,
+				1162D160240FA87E00647002 /* RegionAnnotationView.swift */,
+				11C6D385243E46B1003AC870 /* DetailsView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		11C6D396243E49FF003AC870 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
 				113AF0582437A4B2000732D0 /* ChartController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		11EB2CA224140D24001769B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11C6D395243E49DB003AC870 /* Map */,
+				11C6D387243E4705003AC870 /* Region */,
+				11C6D396243E49FF003AC870 /* Chart */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -410,6 +505,7 @@
 		344ED323241AC7AA004C4EA8 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
+				ADADB2092442614600129787 /* Widget.entitlements */,
 				344ED324241AC7AA004C4EA8 /* TodayViewController.swift */,
 				1186BC662429FD7200097E9E /* Main.storyboard */,
 				344ED329241AC7AA004C4EA8 /* Info.plist */,
@@ -429,6 +525,7 @@
 				1162D126240D05F600647002 /* Resources */,
 				344ED32D241AC7AA004C4EA8 /* Embed App Extensions */,
 				CDA50DE1242C7D330055BE4A /* Embed Frameworks */,
+				11C6D399243E4B49003AC870 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -442,7 +539,7 @@
 				115186B3241FB00000EBC83E /* CSV */,
 			);
 			productName = Corona;
-			productReference = 1162D128240D05F600647002 /* Corona Tracker.app */;
+			productReference = 1162D128240D05F600647002 /* COVID-19.app */;
 			productType = "com.apple.product-type.application";
 		};
 		344ED31E241AC7AA004C4EA8 /* Widget */ = {
@@ -464,7 +561,7 @@
 				115186B7241FB04200EBC83E /* CSV */,
 			);
 			productName = CoronaTrackerWidget;
-			productReference = 344ED31F241AC7AA004C4EA8 /* Widget.appex */;
+			productReference = 344ED31F241AC7AA004C4EA8 /* COVID-19.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -504,6 +601,7 @@
 				pl,
 				nl,
 				ro,
+				ko,
 			);
 			mainGroup = 1162D11F240D05F600647002;
 			packageReferences = (
@@ -545,6 +643,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11C6D399243E4B49003AC870 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1162D124240D05F600647002 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -556,29 +674,42 @@
 				1151869D241FAFC200EBC83E /* DataManager.swift in Sources */,
 				1151869F241FAFCA00EBC83E /* Report.swift in Sources */,
 				1151868B241FA9AA00EBC83E /* UIExtensions.swift in Sources */,
+				112A0872244081AE00A59F1D /* ContextMenu.swift in Sources */,
 				117C84F52428D3AA00688459 /* ISO-Country.swift in Sources */,
+				11DCD56F243FAEBB006CE8ED /* AppMenu.swift in Sources */,
+				11C6D382243E460D003AC870 /* MenuItem.swift in Sources */,
+				11C6D390243E4882003AC870 /* UpdateTimeCell.swift in Sources */,
 				115186A1241FAFCA00EBC83E /* Coordinate.swift in Sources */,
+				11C6D394243E48C3003AC870 /* AuthorInfoCell.swift in Sources */,
 				11672A1E2411494F000B2466 /* DayAxisValueFormatter.swift in Sources */,
 				117C84E82428119600688459 /* Assets.swift in Sources */,
+				11C6D37E243E44D4003AC870 /* Charts+Extensions.swift in Sources */,
 				1186BC72242B64FE00097E9E /* RegionDataCell.swift in Sources */,
 				1162D155240F934000647002 /* SimpleMarkerView.swift in Sources */,
 				113AF0592437A4B2000732D0 /* ChartController.swift in Sources */,
 				117C84EA2428119600688459 /* Strings.swift in Sources */,
 				1162D161240FA87E00647002 /* RegionAnnotationView.swift in Sources */,
 				1124F64624224E240002641D /* MenuController.swift in Sources */,
+				11C6D398243E4A23003AC870 /* PanelLayout.swift in Sources */,
 				1162D145240EB86400647002 /* RegionAnnotation.swift in Sources */,
+				11C6D392243E489F003AC870 /* DataSourceCell.swift in Sources */,
 				119043B9242F6F2B0080E405 /* TrendlineChartView.swift in Sources */,
 				11EB2C9F2413FFE1001769B2 /* HistoryChartView.swift in Sources */,
 				115186A0241FAFCA00EBC83E /* TimeSeries.swift in Sources */,
+				11C6D386243E46B1003AC870 /* DetailsView.swift in Sources */,
 				1114CFC82423F8CC00B1CF85 /* ImageItemSource.swift in Sources */,
+				11C6D37C243E4487003AC870 /* RegionChartView.swift in Sources */,
 				1151869C241FAF6200EBC83E /* Extensions.swift in Sources */,
 				1114CFC92423F8CC00B1CF85 /* TextItemSource.swift in Sources */,
 				11EB2CA1241400EF001769B2 /* TopChartView.swift in Sources */,
+				11C6D380243E44FC003AC870 /* BaseChartView.swift in Sources */,
 				3447B4BD241E7790003914AF /* App.swift in Sources */,
 				115186C024203D5100EBC83E /* Change.swift in Sources */,
+				11DCD56D243F8EEC006CE8ED /* AppToolbar.swift in Sources */,
 				1186BC6E242B608200097E9E /* RegionDataController.swift in Sources */,
 				1162D130240D05F600647002 /* MapController.swift in Sources */,
 				1124F64A242386A30002641D /* MenuSegue.swift in Sources */,
+				11C6D384243E464A003AC870 /* MenuItemCell.swift in Sources */,
 				3447B4BB241E7631003914AF /* RegionListController.swift in Sources */,
 				11672A1C24114922000B2466 /* PercentValueFormatter.swift in Sources */,
 				115186A3241FAFCA00EBC83E /* Region.swift in Sources */,
@@ -591,6 +722,8 @@
 				113AF05F243B52B3000732D0 /* ShareManager.swift in Sources */,
 				1162D12E240D05F600647002 /* SceneDelegate.swift in Sources */,
 				11DE76882431339400381C0A /* ChartView.swift in Sources */,
+				11C6D38B243E47BE003AC870 /* StatsCell.swift in Sources */,
+				11C6D38D243E47EF003AC870 /* ChartCell.swift in Sources */,
 				1162D156240F934100647002 /* BalloonMarker.swift in Sources */,
 				11EB2C9D2413F7E9001769B2 /* CurrentChartView.swift in Sources */,
 			);
@@ -639,6 +772,7 @@
 				34C02EBB2431246C00AE80FE /* pl */,
 				113AF060243CB1C1000732D0 /* nl */,
 				113AF061243CB277000732D0 /* ro */,
+				FC5A29A624400862005C58BB /* ko */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -766,22 +900,22 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Corona/App.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.6;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Corona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock3006.coronatracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
+				PRODUCT_NAME = "COVID-19";
+				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -794,22 +928,22 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Corona/App.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.6;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Corona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock3006.coronatracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
+				PRODUCT_NAME = "COVID-19";
+				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -819,7 +953,10 @@
 		344ED32E241AC7AA004C4EA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Widget/Info.plist;
@@ -828,9 +965,13 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.samabox.corona.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
+				PRODUCT_NAME = "COVID-19";
+				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -839,7 +980,10 @@
 		344ED32F241AC7AA004C4EA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Widget/Info.plist;
@@ -848,9 +992,13 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.samabox.corona.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
+				PRODUCT_NAME = "COVID-19";
+				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

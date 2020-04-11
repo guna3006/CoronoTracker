@@ -1,8 +1,6 @@
 //
-//  TextItemSource.swift
 //  Corona Tracker
-//
-//  Created by Mohammad on 3/19/20.
+//  Created by Mhd Hejazi on 3/19/20.
 //  Copyright © 2020 Samabox. All rights reserved.
 //
 
@@ -21,7 +19,8 @@ class TextItemSource: NSObject, UIActivityItemSource {
 		text
 	}
 
-	func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+	func activityViewController(_ activityViewController: UIActivityViewController,
+								itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
 		if activityType?.rawValue.starts(with: "net.whatsapp.WhatsApp.") == true {
 			return nil
 		}
@@ -29,15 +28,19 @@ class TextItemSource: NSObject, UIActivityItemSource {
 		return text
 	}
 
-	func activityViewController(_ activityViewController: UIActivityViewController, subjectForActivityType activityType: UIActivity.ActivityType?) -> String {
+	func activityViewController(_ activityViewController: UIActivityViewController,
+								subjectForActivityType activityType: UIActivity.ActivityType?) -> String {
 		text
 	}
 
-	func activityViewController(_ activityViewController: UIActivityViewController, thumbnailImageForActivityType activityType: UIActivity.ActivityType?, suggestedSize size: CGSize) -> UIImage? {
+	func activityViewController(_ activityViewController: UIActivityViewController,
+								thumbnailImageForActivityType activityType: UIActivity.ActivityType?,
+								suggestedSize size: CGSize) -> UIImage? {
 		nil
 	}
 
-	func activityViewController(_ activityViewController: UIActivityViewController, dataTypeIdentifierForActivityType activityType: UIActivity.ActivityType?) -> String {
+	func activityViewController(_ activityViewController: UIActivityViewController,
+								dataTypeIdentifierForActivityType activityType: UIActivity.ActivityType?) -> String {
 		String(kUTTypePlainText)
 	}
 }

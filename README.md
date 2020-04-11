@@ -1,13 +1,10 @@
-<img src="https://user-images.githubusercontent.com/121827/76558431-5e747900-64ae-11ea-9168-2091a431773a.png" width="127">
-
 # Corona Tracker
-Coronavirus tracker app for iOS & macOS with map &amp; charts.
 
 ![iOS](https://img.shields.io/badge/iOS-10%20-blue)
+![iPadOS](https://img.shields.io/badge/iOS-10%20-blue)
 ![macOS](https://img.shields.io/badge/macOS-10.15-blue)
 ![Swift](https://img.shields.io/badge/Swift-5-orange?logo=Swift&logoColor=white)
-
-![image](https://user-images.githubusercontent.com/121827/77246699-e25efb80-6c3a-11ea-8a49-30bd87ff33c0.png)
+![linkedin](https://img.shields.io/badge/guna3006-x?color=08a0e9&logo=linkedin&logoColor=white)
 
 ## Features
 * __Live data__: Shows the most recent data, and updates automatically.
@@ -18,21 +15,41 @@ Coronavirus tracker app for iOS & macOS with map &amp; charts.
    * __Current state chart__ for all countries (and cities).
    * __Timeline chart__ for all countries (and cities).
    * __Top affected countries__ chart with info about every country.
-  * Option for using a __logarithmic__ scale.
+   * __Daily new cases__ shows how fast the virus is spreading in a given country.
+   * __Cases since the 100th case__ how fast the virus is spreading in different countries.
+   * Option for using a __logarithmic__ scale.
 * __Search__ for countries & cities.
 * __Share__ stats & charts as images.
 * __Today widget__ for worldwide stats (Contributed by [Piotr Ożóg](https://github.com/pbeo)).
 * __Red color scale__: Reflects the number of confirmed cases. In addition to increasing circle size.
 * __Statistics__: Including the number of confirmed, recovered, and deaths, in addition to percents.
-* __iPad__ & __macOS__ support.
+* __iPad__ & __macOS__ & __iOS__ support.
 
 ## How to Use
-### 1. iOS App
-#### Build from source code
-1. Clone/Download the repo.
-2. Open `Corona.xcodeproj` in Xcode.
-3. Choose the right target (iOS or macOS).
-4. Build & run!
+### 1. macOS/iOS/iPadOS
+[Download the latest release](https://github.com/guna3006/CoronoTracker) for macOS/iOS/iPadOS.
+
+## Author
+Gunasegarran Magadevan <a href="https://www.linkedin.com/in/guna3006/">
+<img src="https://img.shields.io/badge/guna3006-x?color=08a0e9&logo=linkedin&logoColor=white" valign="middle" /></a> (guna3006@me.com)
+
+## Credits
+### Data
+Data is provided by JHU CSSE (https://github.com/CSSEGISandData/COVID-19).
+
+### Translations
+* __German__ by [@sebastianbinder](https://github.com/sebastianbinder)
+* __Swedish__ by [@FluffyDev2019](https://github.com/FluffyDev2019)
+* __Portuguese__ by [@ppamorim](https://github.com/ppamorim)
+* __Italian__ by [@Ale111](https://github.com/Ale111)
+* __French__ by [@Risengan](https://github.com/Risengan)
+* __Russian__ by [@wacumov](https://github.com/wacumov)
+* __Simplified Chinese__ by [@erickzli](https://github.com/erickzli)
+* __Spanish__ by [@ejewik](https://github.com/ejewik)
+* __Japanese__ by [@dev-sora](https://github.com/dev-sora)
+* __Polish__ by [@pbeo](https://github.com/pbeo)
+* __Dutch__ by [@hdatteln](https://github.com/hdatteln)
+* __Romanian__ by [@rhcpfan](https://github.com/rhcpfan)
 
 ### Libraries
 * [CSV.swift](https://github.com/yaslab/CSV.swift): For parsing the CSV data file.

@@ -1,8 +1,6 @@
 //
-//  TrenlineChartView.swift
 //  Corona Tracker
-//
-//  Created by Mohammad on 3/28/20.
+//  Created by Mhd Hejazi on 3/28/20.
 //  Copyright © 2020 Samabox. All rights reserved.
 //
 
@@ -13,7 +11,7 @@ import Charts
 class TrendlineChartView: BaseLineChartView {
 	private static let maxItems = 6
 
-	private var colors: [UIColor] { defaultColors }
+	private var colors: [UIColor] = []
 
 	private lazy var legendStack: UIStackView = {
 		let stackView = UIStackView(arrangedSubviews: (1...Self.maxItems).map { _ in
@@ -53,13 +51,17 @@ class TrendlineChartView: BaseLineChartView {
 			guard selectedIndex != oldValue else { return }
 
 			if let dataSets = chartView.data?.dataSets as? [LineChartDataSet] {
-				for i in dataSets.indices {
-					let dataSet = dataSets[i]
-					var color = colors[i % colors.count]
-					if selectedIndex > -1 && selectedIndex != i {
+				for index in dataSets.indices {
+					let dataSet = dataSets[index]
+					var color = colors[index % colors.count]
+					let stack = legendStack.arrangedSubviews[index]
+
+					stack.alpha = 1
+					if selectedIndex > -1 && selectedIndex != index {
 						color = color.withAlphaComponent(0.5)
+						stack.alpha = 0.5
 					}
-					dataSet.lineDashLengths = selectedIndex == i ? nil : [4, 2]
+					dataSet.lineDashLengths = selectedIndex == index ? nil : [4, 2]
 					dataSet.colors = [color]
 					dataSet.circleColors = [color]
 				}
@@ -70,16 +72,16 @@ class TrendlineChartView: BaseLineChartView {
 			}
 		}
 	}
-	
+
 	override var shareableText: String? { L10n.Chart.trendline }
 
 	override var supportedModes: [Statistic.Kind] {
 		[.confirmed, .deaths]
 	}
-	
+
 	override var extraMenuItems: [MenuItem] {
 		[MenuItem.option(title: L10n.Chart.logarithmic, selected: isLogarithmic, action: {
-			self.isLogarithmic = !self.isLogarithmic
+			self.isLogarithmic.toggle()
 		})]
 	}
 
@@ -93,19 +95,18 @@ class TrendlineChartView: BaseLineChartView {
 	override func initializeView() {
 		super.initializeView()
 
-		chartView.xAxis.valueFormatter = DefaultAxisValueFormatter() { value, axis in
+		chartView.xAxis.valueFormatter = DefaultAxisValueFormatter { value, _ in
 			L10n.Chart.Axis.days(Int(value))
 		}
 
-		chartView.leftAxis.valueFormatter = DefaultAxisValueFormatter() { value, axis in
-			self.isLogarithmic ? Int(pow(10, value)).kmFormatted : Int(value).kmFormatted
+		chartView.leftAxis.valueFormatter = DefaultAxisValueFormatter { value, _ in
+			self.isLogarithmic ? pow(10, value).kmFormatted : value.kmFormatted
 		}
 
 		let simpleMarker = SimpleMarkerView(chartView: chartView)
 		simpleMarker.visibilityCallback = { entry, visible in
 			let index = (entry.data as? Int) ?? -1
 			self.selectedIndex = visible ? index : -1
-			print(index)
 		}
 		simpleMarker.font = .systemFont(ofSize: 13 * fontScale)
 		chartView.marker = simpleMarker
@@ -122,16 +123,26 @@ class TrendlineChartView: BaseLineChartView {
 
 	override func update(region: Region?, animated: Bool) {
 		super.update(region: region, animated: animated)
-		
-		var regions = DataManager.instance.topCountries.filter { $0.timeSeries != nil }
+
+		var regions: [Region] = []
+
+		if region?.isWorld != true, let subRegions = region?.subRegions {
+			regions = [Region](subRegions.lazy.sorted().reversed().filter { $0.timeSeries != nil }.prefix(6))
+			colors = defaultColors.reversed()
+		}
+
+		if regions.count < 2 {
+			regions = DataManager.shared.topCountries.filter { $0.timeSeries != nil }
+			if let region = region, region.isCountry, !regions.contains(region) {
+				regions.removeLast()
+				regions.append(region)
+			}
+			colors = defaultColors
+		}
+
 		guard regions.count > 2 else {
 			chartView.data = nil
 			return
-		}
-
-		if let region = region, region.isCountry, !regions.contains(region) {
-			regions.removeLast()
-			regions.append(region)
 		}
 
 		title = (mode == .deaths) ? L10n.Chart.Trendline.deaths : L10n.Chart.trendline
@@ -157,24 +168,24 @@ class TrendlineChartView: BaseLineChartView {
 		let labels = regions.map { $0.localizedName }
 
 		var dataSets = [LineChartDataSet]()
-		for i in entries.indices {
-			let dataSet = LineChartDataSet(entries: entries[i], label: labels[i])
+		for index in entries.indices {
+			let dataSet = LineChartDataSet(entries: entries[index], label: labels[index])
 			dataSet.mode = .cubicBezier
 			dataSet.drawValuesEnabled = false
 
-			let color = colors[i % colors.count]
+			let color = colors[index % colors.count]
 
 			dataSet.colors = [color]
 
 			dataSet.drawCirclesEnabled = false
-			dataSet.circleRadius = (regions[i] == region ? 3 : 2) * fontScale
+			dataSet.circleRadius = (regions[index] == region ? 3 : 2) * fontScale
 			dataSet.circleColors = [color.withAlphaComponent(0.75)]
 
 			dataSet.drawCircleHoleEnabled = false
 			dataSet.circleHoleRadius = 1 * fontScale
 
-			dataSet.lineWidth = (regions[i] == region ? 2.5 : 1.5) * fontScale
-			dataSet.lineDashLengths = regions[i] == region ? nil : [4, 2]
+			dataSet.lineWidth = (regions[index] == region ? 2.5 : 1.5) * fontScale
+			dataSet.lineDashLengths = regions[index] == region ? nil : [4, 2]
 			dataSet.highlightLineWidth = 1 * fontScale
 			dataSet.highlightColor = UIColor.lightGray.withAlphaComponent(0.5)
 			dataSet.drawHorizontalHighlightIndicatorEnabled = false
@@ -188,8 +199,7 @@ class TrendlineChartView: BaseLineChartView {
 			chartView.leftAxis.axisMinimum = 2
 			chartView.leftAxis.axisMaximum = 6
 			chartView.leftAxis.labelCount = 4
-		}
-		else {
+		} else {
 			chartView.leftAxis.resetCustomAxisMin()
 			chartView.leftAxis.resetCustomAxisMax()
 		}
@@ -214,7 +224,10 @@ class TrendlineChartView: BaseLineChartView {
 		chartView.extraBottomOffset = legendStack.bounds.height + 10
 	}
 
-	@objc func legendTapped(_ recognizer: UITapGestureRecognizer) {
+	// MARK: - Actions
+
+	@objc
+	func legendTapped(_ recognizer: UITapGestureRecognizer) {
 		let point = recognizer.location(in: legendStack)
 		let index = legendStack.arrangedSubviews.firstIndex { view in
 			view.point(inside: view.convert(point, from: legendStack), with: nil)

@@ -1,8 +1,6 @@
 //
-//  CurrentStateChart.swift
 //  Corona Tracker
-//
-//  Created by Mohammad on 3/7/20.
+//  Created by Mhd Hejazi on 3/7/20.
 //  Copyright © 2020 Samabox. All rights reserved.
 //
 
@@ -15,7 +13,7 @@ class HistoryChartView: BaseLineChartView {
 
 	override var extraMenuItems: [MenuItem] {
 		[MenuItem.option(title: L10n.Chart.logarithmic, selected: isLogarithmic, action: {
-			self.isLogarithmic = !self.isLogarithmic
+			self.isLogarithmic.toggle()
 		})]
 	}
 
@@ -29,8 +27,8 @@ class HistoryChartView: BaseLineChartView {
 	override func initializeView() {
 		super.initializeView()
 
-		chartView.leftAxis.valueFormatter = DefaultAxisValueFormatter() { value, axis in
-			self.isLogarithmic ? Int(pow(10, value)).kmFormatted : Int(value).kmFormatted
+		chartView.leftAxis.valueFormatter = DefaultAxisValueFormatter { value, _ in
+			self.isLogarithmic ? pow(10, value).kmFormatted : value.kmFormatted
 		}
 
 		chartView.xAxis.valueFormatter = DayAxisValueFormatter(chartView: chartView)
@@ -85,15 +83,15 @@ class HistoryChartView: BaseLineChartView {
 		let colors = [UIColor.systemOrange, .systemRed, .systemGreen]
 
 		var dataSets = [LineChartDataSet]()
-		for i in entries.indices {
-			let dataSet = LineChartDataSet(entries: entries[i], label: labels[i])
+		for index in entries.indices {
+			let dataSet = LineChartDataSet(entries: entries[index], label: labels[index])
 			dataSet.mode = .cubicBezier
 			dataSet.drawValuesEnabled = false
-			dataSet.colors = [colors[i].withAlphaComponent(0.75)]
+			dataSet.colors = [colors[index].withAlphaComponent(0.75)]
 
 //			dataSet.drawCirclesEnabled = false
 			dataSet.circleRadius = (confirmedEntries.count < 60 ? 2 : 1.8) * fontScale
-			dataSet.circleColors = [colors[i]]
+			dataSet.circleColors = [colors[index]]
 
 			dataSet.drawCircleHoleEnabled = false
 			dataSet.circleHoleRadius = 1 * fontScale
@@ -110,8 +108,7 @@ class HistoryChartView: BaseLineChartView {
 			chartView.leftAxis.axisMinimum = 1
 			chartView.leftAxis.axisMaximum = 7
 			chartView.leftAxis.labelCount = 6
-		}
-		else {
+		} else {
 			chartView.leftAxis.resetCustomAxisMin()
 			chartView.leftAxis.resetCustomAxisMax()
 		}

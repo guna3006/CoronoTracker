@@ -1,8 +1,6 @@
 /* 
-  Localizable.strings
-  Corona
-
-  Created by Mohammad on 3/22/20.
+  Corona Tracker
+  Created by Mhd Hejazi on 3/22/20.
   Copyright © 2020 Samabox. All rights reserved.
 */
 
@@ -12,6 +10,7 @@
 "case.deaths" = "Deaths";
 "region.world" = "Worldwide";
 "chart.topCountries" = "Most Affected Countries";
+"chart.topRegions" = "Most Affected Regions";
 "chart.logarithmic" = "Logarithmic Scale";
 "chart.delta" = "Daily New Cases";
 "chart.delta.deaths" = "Daily New Deaths";
@@ -35,5 +34,6 @@
 "menu.copy" = "Copy";
 "menu.update" = "Update";
 "menu.share" = "Share";
+"menu.search" = "Search";
 "share.current" = "Coronavirus live update";
 "share.chartHistory" = "Coronavirus growth chart";

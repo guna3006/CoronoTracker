@@ -1,8 +1,6 @@
 //
-//  Statistic.swift
-//  Corona
-//
-//  Created by Mohammad on 3/4/20.
+//  Corona Tracker
+//  Created by Mhd Hejazi on 3/4/20.
 //  Copyright © 2020 Samabox. All rights reserved.
 //
 
@@ -17,9 +15,21 @@ public struct Statistic: Codable {
 extension Statistic {
 	public var activeCount: Int { confirmedCount - recoveredCount - deathCount }
 
-	public var recoveredPercent: Double { confirmedCount == 0 ? 0 : 100.0 * Double(recoveredCount) / Double(confirmedCount) }
-	public var deathPercent: Double { confirmedCount == 0 ? 0 :  100.0 * Double(deathCount) / Double(confirmedCount) }
-	public var activePercent: Double { confirmedCount == 0 ? 0 :  100.0 * Double(activeCount) / Double(confirmedCount) }
+	public var recoveredPercent: Double {
+		confirmedCount == 0
+			? 0
+			: 100.0 * Double(recoveredCount) / Double(confirmedCount)
+	}
+	public var deathPercent: Double {
+		confirmedCount == 0
+			? 0
+			: 100.0 * Double(deathCount) / Double(confirmedCount)
+	}
+	public var activePercent: Double {
+		confirmedCount == 0
+			? 0
+			: 100.0 * Double(activeCount) / Double(confirmedCount)
+	}
 
 	public var confirmedCountString: String { confirmedCount.groupingFormatted }
 	public var recoveredCountString: String { recoveredCount == 0 ? "-" : recoveredCount.groupingFormatted }
@@ -34,7 +44,7 @@ extension Statistic {
 }
 
 extension Statistic {
-	public enum Kind: CustomStringConvertible {
+	public enum Kind: Int, RawRepresentable, CustomStringConvertible {
 		case confirmed, active, recovered, deaths
 
 		public static let all: [Kind] = [.confirmed, .active, .recovered, .deaths]

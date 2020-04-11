@@ -1,8 +1,6 @@
 //
-//  Extensions.swift
-//  Corona
-//
-//  Created by Mohammad on 3/3/20.
+//  Corona Tracker
+//  Created by Mhd Hejazi on 3/3/20.
 //  Copyright © 2020 Samabox. All rights reserved.
 //
 
@@ -17,34 +15,26 @@ extension MKMapView {
 	}
 }
 
-extension CLLocationCoordinate2D {
-	public var location: CLLocation {
-		return CLLocation(latitude: latitude, longitude: longitude)
-	}
-
-	public func distance(from coordinate: CLLocationCoordinate2D) -> CLLocationDistance {
-		return location.distance(from: coordinate.location)
-	}
-}
-
 extension UIControl {
-	public func addAction(for controlEvents: UIControl.Event = .touchUpInside, _ closure: @escaping () -> ()) {
+	public func addAction(for controlEvents: UIControl.Event = .touchUpInside, _ closure: @escaping () -> Void) {
 		let sleeve = ClosureSleeve(closure)
 		addTarget(sleeve, action: #selector(ClosureSleeve.invoke), for: controlEvents)
 		objc_setAssociatedObject(self, "[\(arc4random())]", sleeve, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
 	}
-}
 
-/// WARNING: This solution causes memory leaks
-@objc class ClosureSleeve: NSObject {
-	let closure: () -> ()
+	/// WARNING: This solution causes memory leaks
+	@objc
+	class ClosureSleeve: NSObject {
+		let closure: () -> Void
 
-	init (_ closure: @escaping () -> ()) {
-		self.closure = closure
-	}
+		init (_ closure: @escaping () -> Void) {
+			self.closure = closure
+		}
 
-	@objc func invoke() {
-		closure()
+		@objc
+		func invoke() {
+			closure()
+		}
 	}
 }
 
@@ -146,7 +136,6 @@ extension UIImage {
 		guard let directoryURL = FileManager.cachesDirectoryURL else { return nil }
 
 		let imageURL = directoryURL.appendingPathComponent("\(fileName).\(imageType.rawValue)")
-		print(imageURL)
 
 		var data: Data?
 
