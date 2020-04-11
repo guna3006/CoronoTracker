@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "5cb88e0597b2ea56fab44db2024d8ce4"
+build_time: [1586643592, 291696000]
+inputs:
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelBackdropView.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelBehavior.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelController.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelCore.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelLayout.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelSurfaceView.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelTransitioning.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/FloatingPanelView.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/GrabberHandleView.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/Logger.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/FloatingPanel/Framework/Sources/UIExtensions.swift": [9223372036, 854775807]

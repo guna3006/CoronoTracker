@@ -1,0 +1,12 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "9c7a972491d92caf3ff0389a83bdfbfb"
+build_time: [1586643202, 170352000]
+inputs:
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/BinaryReader.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/CSVError.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/CSVReader.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/CSVRowDecoder.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/CSVWriter.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/Endian.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/Legacy.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Library/Developer/Xcode/DerivedData/Corona-dzwwiedtszoiufehyqytdziadige/SourcePackages/checkouts/CSV.swift/Sources/CSV/UnicodeIterator.swift": [9223372036, 854775807]

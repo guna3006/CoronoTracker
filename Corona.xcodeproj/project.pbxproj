@@ -93,8 +93,8 @@
 		11EB2CA1241400EF001769B2 /* TopChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EB2CA0241400EF001769B2 /* TopChartView.swift */; };
 		3447B4BB241E7631003914AF /* RegionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195F19D241D2E7900FE718F /* RegionListController.swift */; };
 		3447B4BD241E7790003914AF /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3447B4BC241E7790003914AF /* App.swift */; };
-		344ED322241AC7AA004C4EA8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ED321241AC7AA004C4EA8 /* NotificationCenter.framework */; platformFilter = ios; };
-		344ED32C241AC7AA004C4EA8 /* COVID-19.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 344ED31F241AC7AA004C4EA8 /* COVID-19.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		344ED322241AC7AA004C4EA8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344ED321241AC7AA004C4EA8 /* NotificationCenter.framework */; };
+		344ED32C241AC7AA004C4EA8 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 344ED31F241AC7AA004C4EA8 /* Widget.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		344ED333241ACCC9004C4EA8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344ED324241AC7AA004C4EA8 /* TodayViewController.swift */; };
 		CDA50DE0242C7D330055BE4A /* CSV in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B3241FB00000EBC83E /* CSV */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CDA50DE2242C7D350055BE4A /* Disk in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 115186B0241FAFF300EBC83E /* Disk */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -109,14 +109,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				344ED32C241AC7AA004C4EA8 /* COVID-19.appex in Embed App Extensions */,
+				344ED32C241AC7AA004C4EA8 /* Widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		CDA50DE1242C7D330055BE4A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -124,11 +124,11 @@
 				CDA50DE2242C7D350055BE4A /* Disk in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CDA50DE4242C7D3C0055BE4A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -136,7 +136,7 @@
 				CDA50DE5242C7D3D0055BE4A /* Disk in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -164,7 +164,7 @@
 		11518698241FAECB00EBC83E /* JHURepoDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHURepoDataService.swift; sourceTree = "<group>"; };
 		1151869B241FAF6200EBC83E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		115186BE242019EE00EBC83E /* Change.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
-		1162D128240D05F600647002 /* COVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1162D128240D05F600647002 /* Corona Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Corona Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1162D12B240D05F600647002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1162D12D240D05F600647002 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1162D12F240D05F600647002 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -218,12 +218,11 @@
 		11EB2CA0241400EF001769B2 /* TopChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopChartView.swift; sourceTree = "<group>"; };
 		18CAD032242A5E1200CA1CEE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3447B4BC241E7790003914AF /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		344ED31F241AC7AA004C4EA8 /* COVID-19.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "COVID-19.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		344ED31F241AC7AA004C4EA8 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		344ED321241AC7AA004C4EA8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		344ED324241AC7AA004C4EA8 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		344ED329241AC7AA004C4EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34C02EBB2431246C00AE80FE /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		ADADB2092442614600129787 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
 		FC5A29A624400862005C58BB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,8 +318,8 @@
 		1162D129240D05F600647002 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1162D128240D05F600647002 /* COVID-19.app */,
-				344ED31F241AC7AA004C4EA8 /* COVID-19.appex */,
+				1162D128240D05F600647002 /* Corona Tracker.app */,
+				344ED31F241AC7AA004C4EA8 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -505,7 +504,6 @@
 		344ED323241AC7AA004C4EA8 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
-				ADADB2092442614600129787 /* Widget.entitlements */,
 				344ED324241AC7AA004C4EA8 /* TodayViewController.swift */,
 				1186BC662429FD7200097E9E /* Main.storyboard */,
 				344ED329241AC7AA004C4EA8 /* Info.plist */,
@@ -539,7 +537,7 @@
 				115186B3241FB00000EBC83E /* CSV */,
 			);
 			productName = Corona;
-			productReference = 1162D128240D05F600647002 /* COVID-19.app */;
+			productReference = 1162D128240D05F600647002 /* Corona Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		344ED31E241AC7AA004C4EA8 /* Widget */ = {
@@ -561,7 +559,7 @@
 				115186B7241FB04200EBC83E /* CSV */,
 			);
 			productName = CoronaTrackerWidget;
-			productReference = 344ED31F241AC7AA004C4EA8 /* COVID-19.appex */;
+			productReference = 344ED31F241AC7AA004C4EA8 /* Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -903,20 +901,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Corona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
-				PRODUCT_NAME = "COVID-19";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -931,20 +928,19 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Corona/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
-				PRODUCT_NAME = "COVID-19";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -953,10 +949,9 @@
 		344ED32E241AC7AA004C4EA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Widget/Info.plist;
@@ -966,12 +961,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
-				PRODUCT_NAME = "COVID-19";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -980,10 +972,9 @@
 		344ED32F241AC7AA004C4EA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Widget/Widget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6PFK4MX4T4;
 				INFOPLIST_FILE = Widget/Info.plist;
@@ -993,12 +984,9 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherlock.corona;
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.sherlock.corona;
-				PRODUCT_NAME = "COVID-19";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Corona-iOS";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Corona-macOS";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

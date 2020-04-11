@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "fd49acf1fde9ad8af4111ecd14416343"
+build_time: [1586643215, 661346000]
+inputs:
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Service/DataService.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Service/JHURepoDataService.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Generated/Strings.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Widget/TodayViewController.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Model/TimeSeries.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Data/DataManager.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Model/Region.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Util/UIExtensions.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Util/Extensions.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Generated/Assets.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Util/SystemColor.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Model/Report.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Model/Coordinate.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Generated/ISO-Country.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Service/JHUWebDataService.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Model/Statistic.swift": [9223372036, 854775807]
+  "/Users/gunasegarran/Documents/CoronoTracker/Corona/Model/Change.swift": [9223372036, 854775807]

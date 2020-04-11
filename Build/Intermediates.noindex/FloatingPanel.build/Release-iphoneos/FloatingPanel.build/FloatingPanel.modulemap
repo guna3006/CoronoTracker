@@ -1,0 +1,4 @@
+module FloatingPanel {
+header "FloatingPanel-Swift.h"
+export *
+}
